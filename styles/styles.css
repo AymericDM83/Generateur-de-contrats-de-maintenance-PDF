@@ -353,10 +353,10 @@ header .itemToFlex {
         font-weight: 900;
         margin-right: 1rem;
 }
-.pdfHeaderDeco #firstTextHeader {
+.pdfHeaderDeco .firstTextHeader {
         margin-right: 1.9rem;
 }
-.pdfHeaderDeco #rotateSpanHeader {
+.pdfHeaderDeco .rotateSpanHeader {
         -webkit-transform: rotate(90deg);
         position: absolute;
         top: 9.45rem;

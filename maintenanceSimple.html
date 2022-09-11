@@ -71,7 +71,7 @@
                     <div class="rowInfosClient formRow " >
 
                         <div class="itemInfosClient formItem" id="adressLabel">
-                            <label for="AdresseInput">Adresse</label>
+                            <label for="adresseInput">Adresse</label>
                             <input type="text" class="formInput" id="adresseInput">
                         </div>
                         
@@ -112,7 +112,7 @@
                         </div>
 
                         <div class="itemInfosInstallation formItem">
-                            <label for="systemePriceInput">Tarif général</label>
+                            <label>Tarif général</label>
                             <div class="systemePriceInput">
                                 <p class="systemePriceContainer">125 €</p>
                             </div>
@@ -141,7 +141,7 @@
                     <div class="rowInfosInstallation formRow">
                         
                         <div class="itemInfosInstallation formItem">
-                            <label for="fluideInput">Type de fluide</label>
+                            <label for="fluideSelect">Type de fluide</label>
                             <select name="fluideSelect" id="fluideSelect">
                                 <option value="R407C">R407C</option>
                                 <option value="R410A">R410A</option>
@@ -201,12 +201,12 @@
                         <div class="rowInfosContrat formRow">
     
                             <div class="itemInfosContrat formItem">
-                                <label for="">Clause particulière</label>
+                                <label for="clauseInput">Clause particulière</label>
                                 <textarea name="clauseInput" id="clauseInput" cols="50" rows="3"></textarea>
                             </div>
     
                             <div class="itemInfosContrat formItem">
-                                <label for="visitInput">Nombre de visites</label>
+                                <label>Nombre de visites</label>
                                 <input class="visitInput" type="number" min="1">
                             </div>
     
@@ -243,7 +243,7 @@
                             </div>
         
                             <div class="itemInfosContrat formItem">
-                                <label for="optionPriceInput">Tarif option supplémentaire</label>
+                                <label>Tarif option supplémentaire</label>
                                 <div class="optionPriceInput">
                                     <p class="optionSuppPriceContainer">
                                         <!-- Prix option supp içi -->
@@ -295,8 +295,8 @@
                     </div>
         
                     <div class="pdfHeaderDeco">
-                        <p id="firstTextHeader">Mise en route - Assistance - Maintenance</p> 
-                        <p id="rotateSpanHeader">-  Climatisation - Chauffage thermodynamique</p>
+                        <p class="firstTextHeader">Mise en route - Assistance - Maintenance</p> 
+                        <p class="rotateSpanHeader">-  Climatisation - Chauffage thermodynamique</p>
                     </div>
                 </div>
         
@@ -511,8 +511,8 @@
                     </div>
         
                     <div class="pdfHeaderDeco">
-                        <p id="firstTextHeader">Mise en route - Assistance - Maintenance</p> 
-                        <p id="rotateSpanHeader">-  Climatisation - Chauffage thermodynamique</p>
+                        <p class="firstTextHeader">Mise en route - Assistance - Maintenance</p> 
+                        <p class="rotateSpanHeader">-  Climatisation - Chauffage thermodynamique</p>
                     </div>
                 </div>
     
@@ -622,8 +622,8 @@
                     </div>
     
                     <div class="pdfHeaderDeco">
-                        <p id="firstTextHeader">Mise en route - Assistance - Maintenance</p> 
-                        <p id="rotateSpanHeader">-  Climatisation - Chauffage thermodynamique</p>
+                        <p class="firstTextHeader">Mise en route - Assistance - Maintenance</p> 
+                        <p class="rotateSpanHeader">-  Climatisation - Chauffage thermodynamique</p>
                     </div>
                 </div>
 
@@ -707,7 +707,7 @@
                         <p>Signature</p>
                     </div>
                     <div class="blockSignature">
-                        <p">Fait à </p>
+                        <p>Fait à </p>
                         <p>Le </p>
                     </div>
                     <div class="blockSignature">
