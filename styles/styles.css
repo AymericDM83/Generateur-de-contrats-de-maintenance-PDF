@@ -1,0 +1,658 @@
+/* Reset CSS */
+*, ::before, ::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;    
+}
+
+body {
+     background-color: #a5b2cf;
+     font-family: 'Montserrat';
+}
+
+/* Animations toutes pages */
+@-webkit-keyframes text-focus-in {
+    0% {
+      -webkit-filter: blur(12px);
+              filter: blur(12px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-filter: blur(0px);
+              filter: blur(0px);
+      opacity: 1;
+    }
+}
+@keyframes text-focus-in {
+    0% {
+      -webkit-filter: blur(12px);
+              filter: blur(12px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-filter: blur(0px);
+              filter: blur(0px);
+      opacity: 1;
+    }
+}
+@keyframes bounce-in-top {
+    0% {
+      -webkit-transform: translateY(-500px);
+              transform: translateY(-500px);
+      -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
+      opacity: 0;
+    }
+    38% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+      -webkit-animation-timing-function: ease-out;
+              animation-timing-function: ease-out;
+    }
+    55% {
+      -webkit-transform: translateY(-65px);
+              transform: translateY(-65px);
+      -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
+    }
+    72% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+      -webkit-animation-timing-function: ease-out;
+              animation-timing-function: ease-out;
+              opacity: 1;
+    }
+    81% {
+      -webkit-transform: translateY(-28px);
+              transform: translateY(-28px);
+      -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
+    }
+    90% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+      -webkit-animation-timing-function: ease-out;
+              animation-timing-function: ease-out;
+    }
+    95% {
+      -webkit-transform: translateY(-8px);
+              transform: translateY(-8px);
+      -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
+    }
+    100% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+      -webkit-animation-timing-function: ease-out;
+              animation-timing-function: ease-out;
+    }
+}
+
+@-webkit-keyframes fade-in {
+        0% {
+        opacity: 0;
+        }
+        100% {
+        opacity: 1;
+        }
+}
+@keyframes fade-in {
+        0% {
+        opacity: 0;
+        }
+        100% {
+        opacity: 1;
+        }
+}
+
+@-webkit-keyframes flip-in-ver-right {
+        0% {
+          -webkit-transform: rotateY(-80deg);
+                  transform: rotateY(-80deg);
+          opacity: 0;
+        }
+        100% {
+          -webkit-transform: rotateY(0);
+                  transform: rotateY(0);
+          opacity: 1;
+        }
+      }
+      @keyframes flip-in-ver-right {
+        0% {
+          -webkit-transform: rotateY(-80deg);
+                  transform: rotateY(-80deg);
+          opacity: 0;
+        }
+        100% {
+          -webkit-transform: rotateY(0);
+                  transform: rotateY(0);
+          opacity: 1;
+        }
+      }
+      
+
+/* Header toutes pages */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+header .logo {
+    margin: 2rem 1rem 0 2rem;
+} 
+header .title {
+        margin: 4rem 2rem;
+        animation: text-focus-in 0.8s ease-in-out;
+}
+header .title h1 {
+    color: #0b4688;
+    font-size: 3rem;
+    text-align: center;
+}
+header .itemToFlex {
+        width: 15rem;
+        height: 9rem;
+}
+
+
+/* *********************    Index   *********************/
+
+.contratTypes {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        animation: bounce-in-top 1.5s ease-in-out; 
+        margin-top: 8rem;
+}
+.contratTypes a {
+        width: 40%;
+        height: 10rem;
+        background-color: #0b4688;
+        text-decoration: none;
+        border-radius: 2rem;
+        box-shadow: 2px 2px 5px 1px rgba(0,0,0,0.75);
+        transition: 0.4s;
+}
+.contratTypes a:hover {
+        transform: scale(1.05);
+}
+.contratTypesBlock {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+}
+.contratTypesBlock p {
+        font-size: 1.8rem;
+        font-weight: 700;
+        color: white;
+        text-align: center;
+}
+
+
+/* Section 1 - Formulaire */
+
+.sectionFormulaire {
+        width: 65%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        animation: fade-in 1.5s ease-in-out
+}
+
+.sectionFormulaire .formBlock {
+        width: 100%;
+}
+
+.sectionFormulaire .formBlock h2{
+        text-align: center;
+        color: #0b4688;
+        text-decoration: underline;
+        font-size: 2.2rem;
+        margin: 3rem 0 1.8rem 0;
+}
+
+.formBlock .formContainer .formRow{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+}
+
+.formContainer .formRow .formItem {
+        margin: 1rem 0;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+}
+.formItem .deplacementSuppInput .deplacementSuppPriceContainer,
+.formItem .optionPriceInput .optionSuppPriceContainer,
+.formItem .systemePriceContainer {
+        color: white;
+        font-weight: bold;
+        font-size: 1.6rem;
+        padding-left: 7rem;
+        width: 21rem;
+}
+.formContainer .formRow .formItem label {
+        font-size: 1.5rem;
+        font-weight: 500;
+        color: #0b4688;
+        margin: 0 3rem 0 0;
+        width: 10rem;
+}
+
+.formContainer .formRow .formItem input {
+        height: 1.2rem;
+        width: 20rem;
+        font-size: 1.2rem;
+        font-weight: 500;
+        margin-right: 1rem;
+        padding: 1rem 0.8rem;
+        border-radius: 10px;
+        background-color: white;
+}
+
+.formContainer .formRow .formItem select {
+        height: 3rem;
+        width: 20rem;
+        margin-right: 1rem;
+        padding: 0.3rem 0.4rem;
+        font-size: 1.4rem;
+        font-weight: 500;
+        border-radius: 10px;
+        color: black;
+        background-color: white;
+}
+.formContainer .formRow .formItem textarea {
+        height: 4rem;
+        width: 20rem;
+        font-size: 1.1rem;
+        font-weight: 500;
+        margin-right: 1rem;
+        padding: 0.5rem;
+        border-radius: 10px;
+        background-color: white;
+}
+
+
+/* Section Generate Btn */
+
+.sectionGenerateBtn {
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+}
+.sectionGenerateBtn .generateBtn,
+.sectionGenerateBtn .downloadPdfBtn,
+.sectionGenerateBtn .backBtn {
+        padding: 1rem 3rem;
+        height: 4rem;
+        margin: 2rem 1rem;
+        background-color: #01458c;
+        border-radius: 2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        transition: 0.4s;
+        animation: fade-in 1.5s ease-in-out;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.sectionGenerateBtn .generateBtn:hover,
+.sectionGenerateBtn .downloadPdfBtn:hover,
+.sectionGenerateBtn .backBtn:hover {
+        background-color: #3e638b;
+}
+
+.sectionGenerateBtn i {
+        color: white;
+        margin-right: 2rem;
+        font-size: 2rem;
+
+}
+
+.sectionGenerateBtn .generateBtn p,
+.sectionGenerateBtn .downloadPdfBtn p,
+.sectionGenerateBtn .backBtn p {
+        color: white;
+        font-size: 1.5rem;
+        font-weight: 700;
+}
+
+
+
+/* section PDF */
+
+.sectionPDF {
+        margin: 0 auto;
+        width: 45%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: white;  
+        animation: flip-in-ver-right 1.5s ease-in-out;  
+}
+.sectionPDF .pdfPage {
+        width: 100%;
+}
+.pdfHeader {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 1rem;
+}
+.pdfHeaderDeco {
+        position: relative;
+        color: #01458c;
+        font-size: 0.8rem;
+        font-weight: 900;
+        margin-right: 1rem;
+}
+.pdfHeaderDeco #firstTextHeader {
+        margin-right: 1.9rem;
+}
+.pdfHeaderDeco #rotateSpanHeader {
+        -webkit-transform: rotate(90deg);
+        position: absolute;
+        top: 9.45rem;
+        left: 8.5rem;
+        white-space: nowrap;
+        margin-left: 0.3rem;
+}
+.pdfPage .pdfTitle {
+        display: flex;
+        justify-content: center;
+        align-items: center;    
+}
+.pdfTitle h3 {
+        font-size: 1.2rem;
+        text-transform: uppercase;
+        border: 2px solid black;
+        padding: 1rem 2rem;
+}
+
+/* section PDF - pdfInfos*/
+
+.pdfPage .pdfInfos {
+        margin: 2rem auto 1rem;
+}
+
+.pdfInfos h3 {
+        font-size: 1.2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: underline;
+}
+
+.pdfInfosBlock {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        align-items: center;
+        margin: 2rem 2rem 1rem 3rem;
+}
+.pdfInfos .pdfInfosBlockAdresse {
+        margin-top: 3rem !important;
+}
+.pdfInfosBlock .pdfInfosItem {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 24%;
+}
+.pdfInfosItem p:first-child {
+        font-size: 0.9rem;
+        font-weight: bold;
+        color: #01458c;
+}
+.pdfInfosItem p:nth-last-child(1) {
+        font-size: 1rem;
+        margin-top: 0.5rem;
+}
+
+/* section PDF - pdfArray*/
+
+.pdfArray {
+        width: 92%;
+        margin: 3rem auto 1rem;
+        font-size: 1.2rem;
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+        grid-template-rows: 1fr 3fr;
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        border: 1px solid black;
+}
+        
+.div1 {
+        grid-area: 1 / 1 / 2 / 2;
+        display: flex; 
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid black;
+        border-right: 1px solid black;
+}
+
+.div1 h4:nth-last-child(1) {
+        margin-right: 1.5rem;
+        font-size: 1rem;
+}
+
+.div1 h4:first-child {
+        color: #01458c;
+        margin-left: 1rem;
+        font-size: 1.3rem;
+        text-decoration: none;
+}
+
+.div1 h4,
+.div2 h4,
+.div4 h4 {
+        text-align: center;
+        text-decoration: underline;
+}
+
+.div2 {
+        grid-area: 1 / 2 / 2 / 3;
+        display: flex; 
+        justify-content: center;
+        align-items: center;
+        border-bottom: 1px solid black;
+        font-size: 1rem;
+}
+
+.div2 p:nth-last-child(1) {
+        margin-top: 3rem;
+}
+.div3 {
+        grid-area: 2 / 1 / 3 / 2;
+        font-size: 0.8rem;
+}
+
+.div3 .pdfArrayRow {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 1rem 1rem;
+}
+.div3 .pdfArrayRow span {
+        margin-left: 0.2rem;
+}
+
+.gras {
+        font-weight: bold;
+}
+
+.underline {
+        text-decoration: underline;
+}
+
+.div3 .pdfArrayRow p:nth-last-child(1) {
+        margin-right: 0.5rem;
+}
+
+.div4 { 
+        grid-area: 2 / 2 / 3 / 3;
+        border-left: 1px solid black;
+        margin-left: -0.1rem;
+        font-size: 1rem;
+}
+.div4 p {
+        text-align: center;
+        margin-top: 1rem;
+}
+.div4 h4 {
+        padding: 0.7rem;
+        margin-top: 4rem;
+        border-top: 1px solid black;
+        border-bottom: 1px solid black;
+        font-size: 1rem;
+}
+
+/* Section PDF - PIED DE PAGE */
+
+.pdfPiedDePage {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 2rem 0 0 0;
+}
+
+.pdfPiedDePage .block {
+        display: flex;
+        justify-content: center;
+        color: #01458c;
+        font-size: 0.8rem;
+        margin: 0.2rem 0;
+}
+
+.pdfPiedDePage .block i{
+        margin-right: 0.2rem;
+}
+
+
+/* Section PDF - ARTICLE ET SIGNATURES*/
+
+.pdfText {
+        width: 90%;
+        margin: 0 auto;
+}
+
+.pdfText h3 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 2rem;
+        color: white;
+        background-color: #01458c;
+        border-radius: 2rem;
+        padding: 1rem 0;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.pdfText .article {
+        display: flex;
+        justify-content: flex-start;
+        align-items: baseline;
+        padding: 0.5rem;
+        line-height: 1.1rem;
+        font-size: 0.9rem;
+}
+.pdfText .articleAnnexe {
+        width: 90%;
+        margin: 0 auto 2rem;
+        font-size: 0.7rem;
+}
+.article .articleNb {
+        margin: 0 1rem 0 0;
+        padding-right: 1rem;
+        width: 10%;
+        font-weight: bold;
+        color: #01458c;
+}
+.article .articletext {
+        padding-left: 1rem;
+        width: 100%;
+}
+
+/* Section PDF - Signatures */
+
+.pdfSignatures {
+        display: flex;
+        justify-content: space-around;
+        align-items: baseline;
+        margin: 2rem auto 10rem;
+        font-size: 0.8rem;
+}
+.blockSignature p {
+        margin-bottom: 1rem;
+}
+
+
+
+
+
+/* Disparition item */
+
+.disappearItem {
+        display: none !important;
+}
+
+
+
+/* Media queries header */
+@media screen and (max-width: 992px){
+    header {
+            display: flex;
+            flex-direction: column;
+
+    }
+    header .logo {
+            margin: 2rem auto;
+    }
+    header .title {
+            padding: 0;
+            width: 70%;
+            margin: 0 auto;
+    }
+    header .title::after {
+            width: 90%;
+            margin: 1rem auto;
+    }
+    header .title h1 {
+            font-size: 2.5rem;
+    }
+}
+/* Responsive index.html */
+@media screen and (max-width: 768px){
+        .contratTypes {
+                flex-direction: column;
+                align-items: center;
+                margin-top: 5rem;
+                height: 20rem;
+        }
+        .contratTypes a {
+                margin: 2rem 0;
+                width: 90%;
+        }
+        .contratTypes a:hover {
+                transform: scale(1);
+        }
+}
+/* Responsive section 1 */
+@media screen and (max-width: 1450px) {
+        header .itemToFlex {
+                width: 9rem;
+                height: 1rem;
+        }
+        .formBlock .formContainer .formRow {
+                flex-direction: column;
+        }
+}
