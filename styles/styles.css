@@ -288,6 +288,16 @@ header .itemToFlex {
         display: flex;
         align-items: center;
         justify-content: center;
+        flex-direction: column;
+}
+
+.generateMessage {
+        /* background-color: white; */
+        color: white;
+        border-radius: 50px;
+        padding: 20px;
+        font-weight: 800;
+        font-size: 2rem;
 }
 .sectionGenerateBtn .generateBtn,
 .sectionGenerateBtn .downloadPdfBtn,
@@ -657,5 +667,12 @@ header .itemToFlex {
         }
         .formBlock .formContainer .formRow {
                 flex-direction: column;
+        }
+
+}
+
+@media screen and (max-width: 1280px) {
+        .sectionPDF {
+                display: none;
         }
 }

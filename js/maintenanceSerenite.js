@@ -45,6 +45,8 @@ const generateBtn = document.querySelector(".generateBtn");
 const downloadPdfBtn = document.querySelector(".downloadPdfBtn");
 //  Bouton retour au formulaire
 const backBtn = document.querySelector(".backBtn");
+// Message de création
+const generateMessage = document.querySelector(".generateMessage");
 
 // INPUTS PDF
 // Inputs PDF client
@@ -257,6 +259,7 @@ function disappearForm() {
     generateBtn.classList.toggle("disappearItem");
     backBtn.classList.toggle("disappearItem");
     downloadPdfBtn.classList.toggle("disappearItem");
+    generateMessage.classList.toggle("disappearItem");
   });
 }
 
@@ -269,6 +272,7 @@ function appearForm() {
     generateBtn.classList.toggle("disappearItem");
     backBtn.classList.toggle("disappearItem");
     downloadPdfBtn.classList.toggle("disappearItem");
+    generateMessage.classList.toggle("disappearItem");
   });
 }
 
